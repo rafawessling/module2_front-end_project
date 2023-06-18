@@ -1,0 +1,87 @@
+body {
+    --heading-font: 'Ibarra Real Nova', serif;
+    --body-font: 'Public Sans', sans-serif;
+
+    --primary-color-cyan: #5fb4a2;
+    --primary-color-blue: #203a4c;
+    --primary-color-grayish-blue: #33323d;
+    --secondary-color-bg: #fafafa;
+    --secondary-color-input: #eaeaeb;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+
+    width: 1110px;
+}
+
+.second-project,
+.fourth-project {
+    flex-direction: row-reverse;
+}
+
+.second-project,
+.third-project,
+.fourth-project {
+    margin-top: 80px;
+}
+
+.project img {
+    width: 540px;
+    height: 500px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+    border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
+
+    color: var(--primary-color-grayish-blue);
+}
+
+.project-text h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+}
+
+.project-text p {
+    margin: 28px 0 24px 0;
+
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: hsla(245, 10%, 22%, 0.8);
+}
+
+.button-project {
+    width: 175px;
+    height: 48px;
+
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--primary-color-grayish-blue);
+    border-color: var(--primary-color-grayish-blue);
+    background-color: var(--secondary-color-bg);
+}
+
+.button-project:hover {
+    cursor: pointer;
+
+    color: var(--secondary-color-bg);
+    background-color: var(--primary-color-grayish-blue);
+}

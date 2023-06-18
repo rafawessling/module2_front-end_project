@@ -1,0 +1,167 @@
+body {
+    --heading-font: 'Ibarra Real Nova', serif;
+    --body-font: 'Public Sans', sans-serif;
+
+    --primary-color-cyan: #5fb4a2;
+    --primary-color-blue: #203a4c;
+    --primary-color-grayish-blue: #33323d;
+    --secondary-color-bg: #fafafa;
+    --secondary-color-input: #eaeaeb;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+
+    width: 1110px;
+    height: 600px;
+
+    background-image: url('../../assets/home/image-homepage-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-home-page {
+    margin-bottom: 58px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 445px;
+    height: 357px;
+
+    background-color: var(--secondary-color-bg);
+}
+
+.main-text h1 {
+    margin: 56px 0 0 27px;
+
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.45px;
+
+    color: var(--primary-color-grayish-blue);
+}
+
+.button-sobre-mim {
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 48px;
+    border: none;
+
+    background-color: var(--primary-color-blue);
+}
+
+.image-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+.button-sobre-mim span {
+    flex-grow: 1;
+
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--secondary-color-bg);
+}
+
+.button-sobre-mim:hover {
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--primary-color-cyan);
+}
+
+.button-sobre-mim:hover .image-button svg g {
+    stroke: #ffffff;
+}
+
+.sobre-mim-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+
+    width: 1110px;
+    margin-top: 150px;
+}
+
+.sobre-mim-section img {
+    width: 540px;
+    height: 600px;
+}
+
+.sobre-mim-text {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid hsla(245, 10%, 22%, 0.15);
+    border-bottom: 1px solid hsla(245, 10%, 22%, 0.15);
+
+    color: var(--primary-color-grayish-blue);
+}
+
+.sobre-mim-text h2 {
+    margin: 51px 0 28px 0;
+
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+}
+
+.sobre-mim-text p {
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: hsla(245, 10%, 22%, 0.8);
+}
+
+.sobre-mim-text a {
+    display: flex;
+    justify-content: center;
+}
+
+.button-portfolio {
+    width: 204px;
+    height: 48px;
+    margin-top: 24px;
+
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--primary-color-grayish-blue);
+    border-color: var(--primary-color-grayish-blue);
+    background-color: var(--secondary-color-bg);
+}
+
+.button-portfolio:hover {
+    cursor: pointer;
+
+    color: var(--secondary-color-bg);
+    background-color: var(--primary-color-grayish-blue);
+}

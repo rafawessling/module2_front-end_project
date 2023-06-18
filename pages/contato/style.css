@@ -1,0 +1,124 @@
+body {
+    --heading-font: 'Ibarra Real Nova', serif;
+    --body-font: 'Public Sans', sans-serif;
+
+    --primary-color-cyan: #5fb4a2;
+    --primary-color-blue: #203a4c;
+    --primary-color-grayish-blue: #33323d;
+    --secondary-color-bg: #fafafa;
+    --secondary-color-input: #eaeaeb;
+}
+
+hr {
+    width: 1110px;
+    border-color: hsla(245, 10%, 22%, 0.15);
+}
+
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1110px;
+    margin: 48px 0;
+}
+
+.get-in-touch h2,
+.contact h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+
+    color: var(--primary-color-grayish-blue);
+}
+
+.contact-text {
+    width: 635px;
+}
+
+.contact-text p {
+    font-family: var(--body-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: hsla(245, 10%, 22%, 0.8);
+}
+
+.links-contato {
+    margin-top: 54px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1110px;
+    margin-top: 47px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+
+    color: hsla(245, 10%, 22%, 0.8);
+}
+
+.input-space {
+    all: unset;
+    width: 630px;
+    margin: 8px 0 24px 0;
+
+    background-color: hsla(245, 10%, 22%, 0.1);
+}
+
+.input-nome,
+.input-email {
+    height: 48px;
+    padding-left: 5px;
+}
+
+.input-message {
+    height: 96px;
+
+    padding-left: 5px;
+}
+
+.input-nome:focus,
+.input-email:focus,
+.input-message:focus {
+    outline: 2px solid var(--primary-color-grayish-blue);
+}
+
+.button-send {
+    width: 175px;
+    height: 48px;
+    border: none;
+
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--secondary-color-bg);
+    background-color: var(--primary-color-blue);
+}
+
+.button-send:hover {
+    cursor: pointer;
+
+    background-color: var(--primary-color-cyan);
+}
+
+footer {
+    margin-top: 109px;
+}
